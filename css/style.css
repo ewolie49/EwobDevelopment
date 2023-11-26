@@ -1,0 +1,252 @@
+* {
+   /* border: 3px solid; */
+  /*font-family: 'Courier New', Courier, monospace;*/
+}
+
+body {
+
+
+}
+
+:root {
+
+  --main-color: #00111b;
+  --secondary-color: yellow;
+  --text-color: white;
+
+}
+
+/* I´ve discovered this functionallity that makes the scrolling smoother*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header section */
+
+header {
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+header h1 {
+ 
+  margin: 20px;
+  
+  display:flex;
+  color: var(--text-color);
+  min-width: 300px;
+  
+  
+}
+
+#navigation {
+  color: var(--text-color);
+  display: flex;
+  min-width: 300px;
+}
+
+#navigation a {
+  
+margin: 20px;
+color: var(--text-color);
+}
+
+
+
+/* Hero Banner section*/
+
+.hero-banner {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 150px;
+  justify-content: space-between;
+  background-image: url(../images/hero-banner.jpeg);
+  background-size: cover;
+  color: var(--text-color);
+}
+
+
+.hero-banner h2 {
+  margin: 20px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display:flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: baseline;
+  justify-content: flex-start;
+  min-width: 330px;
+  height: 30px;
+  
+  
+}
+
+body {
+ 
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* About me section*/
+
+#about-me-section {
+  display: flex;
+
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+
+  color: var(--text-color); 
+  background-color: var(--main-color);
+  
+}
+
+#about-me-section h2 {
+margin-left: 20px;
+height: max-content;
+
+}
+.aboutMeContent{
+  display: flex;
+}
+#profile-picture-and-text{
+ margin-left: auto;
+}
+
+#profile-picture {
+  /*display: flex;*/
+  margin-left: 10px;
+  height: 180px;
+  width: 140px;
+  border-radius: 15px;
+  }
+  
+#profile-picture-text {
+
+  }
+
+#about-me-text {
+  min-width: 400px;
+  max-width: 900px;
+  
+  
+}
+
+/* Work big section*/
+
+#work {
+  
+  
+  background-color: var(--main-color);
+  color: var(--text-color);
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+#work h2 {
+  width: 10%;
+  margin-left: 20px;
+  height: 30px;
+}
+
+
+#mainexample1 {
+  margin-top: 20px;
+  flex-basis: 900px;
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+  border-radius: 30px;
+  align-items: center;
+  object-fit: cover;
+ 
+}
+
+.main-section img:hover {
+  box-shadow: rgb(42, 176, 230) 10px 10px 10px 10px;
+  cursor:pointer;
+}
+
+
+
+
+
+/*rest of work gallery section*/
+
+.rest-of-the-work {
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+list-style-type:none;
+padding-inline-start: 0px;
+}
+
+.rest-of-the-work > li {
+
+  flex-basis: 500px;
+}
+
+.rest-of-the-work li img {
+
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  vertical-align: middle;
+  border-radius: 30px;
+}
+
+.rest-of-the-work img:hover {
+  box-shadow: rgb(42, 176, 230) 10px 10px 10px 10px;
+  cursor:pointer;}
+
+  .overlay {
+    color:aliceblue;
+  }
+
+/*contact me section*/
+
+#contact {
+ 
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+
+@media screen and (max-width:1275px) {
+  #about-me-text{
+    max-width: 600px;
+  }
+
+}
+
+@media screen and (max-width:980px) {
+  #about-me-text{
+    min-width: 300px;
+    max-width: 400px;
+  }
+
+}
+
+@media screen and (max-width:775px) {
+  #about-me-section{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
