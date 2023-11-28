@@ -1,10 +1,8 @@
 * {
-   /* border: 3px solid; */
-  /*font-family: 'Courier New', Courier, monospace;*/
-}
-
-body {
-
+   /*border: 3px solid;*/
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  font-weight: 600;
 
 }
 
@@ -37,7 +35,7 @@ header {
 header h1 {
  
   margin: 20px;
-  
+  font-size: xx-large;
   display:flex;
   color: var(--text-color);
   min-width: 300px;
@@ -97,6 +95,10 @@ body {
   line-height: 1.5;
 }
 
+.page-wrapper {
+  background-color: var(--main-color);
+}
+
 /* About me section*/
 
 #about-me-section {
@@ -129,28 +131,19 @@ height: max-content;
   width: 140px;
   border-radius: 15px;
   }
-  
-#profile-picture-text {
-
-  }
 
 #about-me-text {
   min-width: 400px;
   max-width: 900px;
-  
-  
 }
 
 /* Work big section*/
 
 #work {
-  
-  
   background-color: var(--main-color);
   color: var(--text-color);
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 #work h2 {
@@ -180,14 +173,9 @@ height: max-content;
   cursor:pointer;
 }
 
-
-
-
-
 /*rest of work gallery section*/
 
 .rest-of-the-work {
-
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -197,12 +185,10 @@ padding-inline-start: 0px;
 }
 
 .rest-of-the-work > li {
-
   flex-basis: 500px;
 }
 
 .rest-of-the-work li img {
-
   object-fit: cover;
   width: 100%;
   height: 300px;
@@ -221,9 +207,23 @@ padding-inline-start: 0px;
 /*contact me section*/
 
 #contact {
- 
+  display: flex;
   background-color: var(--main-color);
   color: var(--text-color);
+}
+
+#contact h2 {
+  
+  margin-left: 20px;
+  height: max-content;
+  
+
+}
+
+#contact ul{
+  list-style-type:none;
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 
